@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Objects And Its Properties.</title></head>
+    <body style="background-color: blueviolet;">
+        <center>
+            <h1>Javascript objects and its properties.</h1>
+            <p id="result"></p>
+            <script>
+                //Create an object:
+                var student_info = {
+                    firstName: "I",
+                    age:20,
+                };
+                //Display some data from the object:
+                document.getElementById("result").innerHtml-student_info.firstName + " am " + person.age + "years old.";
+            </script>
+            <br>
+            <hr>
+            <h2>JS Math Object Methods.</h2>
+            <script type="text/javascript">
+                var value = Math.abs(20);
+                document.write("Demo Test Value : " + value + "<br>");
+                 var value = Math.acos(-1);
+                    document.write("Demo1 Test Value : " + value + "<br>");
+                     var value = Math.asin(1);
+                        document.write("Demo2 Test Value : " + value + "<br>");
+                         var value = Math.atan(.5);
+                            document.write("Demo3 Test Value : " + value + "<br>");
+                         </script>
+                         <hr>
+                         <br>
+                         <h3>Finding the largest number with the help of argument objects.</h3>
+                         <p id="result"></p>
+                         <script>
+                            function findMax() {
+                                var i;
+                                var max = 0;
+                                for(i = 0; i <arguments.length; i++) {
+                                    if (arguments[i] > max) {
+                                        max = arguments[i];
+                                    }
+                                }
+                                return max;
+                            }
+                            document.getElementById("result").innerHTML = findMax(4,5,6);
+                         </script>
+        </center>
+        <body>
+            </html>
